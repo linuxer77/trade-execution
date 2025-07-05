@@ -1,26 +1,25 @@
-telegram trade bot
+### telegram trade bot
 
 a telegram bot for me to control trading scripts from a private chat.
-commands
-    
-    /buy <coin> <price> <pre..> — starts buy script
-    
-    /sell <coin> <price> <pre..> — starts sell script
-    
-    /stopbuy — stops the buy script
-    
-    /stopsell — stops the sell script
 
-how it works
+#### commands
 
-    each command sends a message to a tmux session running go executables
+- `/buy <coin> <price> <qty>` — starts buy script  
+- `/sell <coin> <price> <qty>` — starts sell script  
+- `/stopbuy` — stops the buy script  
+- `/stopsell` — stops the sell script  
 
-    profit is calculated based on my algo and subtracts 1.5% fees
+#### how it works
 
-    bot is not public  only works in authorized telegram chat
+- each command sends a message to a `tmux` session running go executables  
+- profit is calculated based on my algo and subtracts 1.5% fees  
+- bot is not public only works in authorized telegram chat tho im setting it to public for now
 
-run
+#### run
+
 set your bot token and run:
 
-export botToekn=your_token
-python3 main.py
+```bash
+export botToken=your_token
+python3 bot.py
+

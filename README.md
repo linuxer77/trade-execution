@@ -4,8 +4,8 @@ a telegram bot for me to control trading scripts from a private chat.
 
 #### commands
 
-- `/buy <coin> <price> <qty>` — starts buy script  
-- `/sell <coin> <price> <qty>` — starts sell script  
+- `/buy <coin> <price> <prc>` — starts buy script  
+- `/sell <coin> <price> <prc>` — starts sell script  
 - `/stopbuy` — stops the buy script  
 - `/stopsell` — stops the sell script  
 
